@@ -2,7 +2,7 @@
 <div>
     <!-- 以下是轮播图 -->
     <div class="product_carousel">
-        <img src="../../../../vue_server_00/public/product/plb-3.jpg" >
+       <Carous></Carous>
     </div>
     <!-- 以下是 生日蛋糕 提货卡 面包外卖 全国快递 -->
     <div class="product_title">
@@ -40,7 +40,9 @@
 </template>
 
 <script>
+import Carous from './Carous.vue'
 export default {
+     components: {Carous},
     data(){
         return{   
           list:[]
@@ -63,9 +65,8 @@ export default {
 
 <style scoped>
     /*以下是轮播头的 图片 样式*/
-    .product_carousel>img{
-        width:100%;
-        height:220;
+    .product_carousel{
+       margin-top:60px;
     }
 
  /* 以下是 生日蛋糕 提货卡 面包外卖 全国快递 */

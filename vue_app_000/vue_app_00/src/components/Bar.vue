@@ -18,29 +18,22 @@
 
 <mt-tab-container v-model="active" class="uname">
   <mt-tab-container-item id="home">
-    <mt-cell>
-      <Product_s>
-      </Product_s>
-      </mt-cell>
+     <Product_s></Product_s>
   </mt-tab-container-item>
   <mt-tab-container-item id="dictionary">
-    <mt-cell>
-     <Dictionary/>
-    </mt-cell>
+   <Dictionary></Dictionary>
   </mt-tab-container-item>
   <mt-tab-container-item id="car">
-    <mt-cell></mt-cell>
+   
   </mt-tab-container-item>
     <mt-tab-container-item id="me">
-    <mt-cell >
-      <Login_s/>
-    </mt-cell>
+      <Login_s></Login_s>
   </mt-tab-container-item>
 </mt-tab-container>
 
 
 
-    <mt-tabbar v-model="selected" fixed>
+    <mt-tabbar v-model="active" fixed>
   <mt-tab-item id="home" >  
     <img slot="icon" src="../assets/start2.png">
      首页   
@@ -71,8 +64,8 @@ import Dictionary from './sqw/Dictionary'
     name: 'uname',
     data () {
       return { 
-        selected: 'home',
-        active:"dictionary"
+       
+        active:"home"
       }
     },
     methods: {

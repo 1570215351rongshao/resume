@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="lunbo_top">
-            <img src="../../../../vue_server_00/public/dictionary/dic1.jpg" alt="">
+           <Carous></Carous>
         </div>
         <div>
             <p>分类</p>
@@ -18,7 +18,9 @@
 </template>
 
 <script>
+import Carous from './Carous.vue'
 export default {
+    components:{Carous},
     data(){
         return{
             list:[]
@@ -40,9 +42,8 @@ export default {
 </script>
 
 <style scoped>
-  .lunbo_top>img{
-        width:375px;
-        height:150px;
+  .lunbo_top{
+       margin-top:60px;
     }
 
 

@@ -29,12 +29,15 @@ Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);
 //以下是脚部点击切换组件
 import { TabContainer, TabContainerItem } from 'mint-ui';
-
 Vue.component(TabContainer.name, TabContainer);
 Vue.component(TabContainerItem.name, TabContainerItem);
 //以下是头部组件导如注册
 import { Header } from 'mint-ui';
 Vue.component(Header.name, Header);
+//以下是分类导航栏的引入注册
+import { Navbar} from 'mint-ui';
+Vue.component(Navbar.name, Navbar);
+
 
 //.将axios注册vue实例中
 axios.defaults.withCredentials=true

@@ -9,7 +9,7 @@
         </div>
         <mt-button class="login_font"  size="large" @click="login">登录</mt-button>
         <a class="register" href="javascript:;">没有账号? </a>
-        <label @click="regLogin()">立即注册</label>
+        <label @click="regLogin">立即注册</label>
         <div class="login_ti">温馨提示：成功注册会员，登录后首次完善个人信息，即可获赠官网会员20积分。</div>
         <div class="login_bottom">淑棋屋，选用全球优质原料，天然奶油蛋糕，使用进口天然稀奶油.</div>
         <div class="login_image"><img src="../../../../vue_server_00/public/product/msg@48x48.png" alt=""></div>
